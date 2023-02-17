@@ -23,11 +23,12 @@ The COCO dataset consists of 80 labels, including, but not limited to:
 You can find a full list of what YOLO trained on the COCO dataset can detect <a href="https://github.com/pjreddie/darknet/blob/master/data/coco.names" 
 
 
-## 
+## Technology and tool used:
 - Pandas
 - Matplotlib
 - numpy
 - OpenCV
+- YOLO V4
 - PYQT
 - LabelImg
 - OIDv4 Toolkit (Used to download images from google open source)
@@ -35,27 +36,22 @@ You can find a full list of what YOLO trained on the COCO dataset can detect <a 
 
 
 
-In prediction.png you can see that YOLO has not only detected each person in the input image, but also has detected car and mototcycle as well!
-
-
-<img src="https://github.com/vishalsingh3363/Object_Detection_YoloV4/blob/main/prediction.png">
-
 
 ## To Download trained weights
 `!wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137` 
 
 
-
 ## To Run the project
-
 - `!./darknet detector train data/Person_Car/image_data.data cfg/yolov4_train.cfg yolov4.conv.137 -dont_show`
 
 
-In the Image, you can see not only the Car, people, and  motorbikes are detected!
+<img src="https://github.com/vishalsingh3363/Object_Detection_YoloV4/blob/main/prediction.png">
 
-The YOLO object detector is performing quite well here. 
+In prediction.png you can see that YOLO has not only detected the person in the input image, but also has detected car and mototcycle as well!
 
-## Limitation:
+
+
+## Some Limitation of YOLO:
 ### Arguably the largest limitation and drawback of the YOLO object detector is that:
 
 - It does not always handle small objects well
